@@ -1,0 +1,67 @@
+Preparing to start the job...
+Running on public worker: eu-gbpublicworker05-2
+Pipeline image: latest
+Cloning the 'master' branch from repo 'https://github.com/dieterbk/qkfls-Movie-Reviews-Database.git'
+Repository successfully cloned
+Getting changes from revision '6f487ccd72822484b8bd6dc0a095961bc32b07f6' to revision 'db5aa1923ffa00478b13642e25faaa07aa4ef6d1'
+cp: './' and './.' are the same file
+GIT_URL=https://github.com/dieterbk/qkfls-Movie-Reviews-Database.git
+GIT_BRANCH=master
+GIT_COMMIT=db5aa1923ffa00478b13642e25faaa07aa4ef6d1
+SOURCE_BUILD_NUMBER=3
+{
+  "container": {
+    "guid": "21f4512060fc4e3595d74cd3f6d8ec89",
+    "type": "resource_group_id"
+  },
+  "toolchain_binding": {
+    "name": "devops-insights",
+    "status": {
+      "state": "configured"
+    }
+  },
+  "broker_id": "368e152e-4c2b-4905-b900-7928d6a0eead",
+  "region_id": "ibm:yp:eu-gb",
+  "description": "Use analytics to determine whether to deploy.",
+  "url": "https://otcbroker.eu-gb.devopsinsights.cloud.ibm.com/draservicebroker/api",
+  "tags": [
+    "ibm",
+    "learn",
+    "productivity",
+    "quality"
+  ],
+  "instance_id": "40d396dd-e9f0-4685-9796-a92415133347",
+  "updated_at": "2021-06-16T12:13:07.648Z",
+  "service_id": "draservicebroker",
+  "dashboard_url": "https://cloud.ibm.com/devops/insights/overview?toolchainId=1bedb760-cc04-40c4-abaf-f4ef883486e7",
+  "parameters": {
+    "dra_server": "https://gateservice.eu-gb.devopsinsights.cloud.ibm.com",
+    "env_id": "ibm:yp:eu-gb",
+    "cf_controller": "https://api.eu-gb.cf.cloud.ibm.com",
+    "dlms_server": "https://dlms.eu-gb.devopsinsights.cloud.ibm.com",
+    "dashboard_url": "https://cloud.ibm.com/devops/insights/overview?toolchainId=1bedb760-cc04-40c4-abaf-f4ef883486e7"
+  },
+  "status": {
+    "state": "configured"
+  }
+}
+API endpoint: https://cloud.ibm.com
+Authenticating...
+OK
+
+Targeted account Dieter Paul's Account (eace6fc190c54838ac0eee815b22517c)
+
+                      
+API endpoint:      https://cloud.ibm.com   
+Region:               
+User:              info@dpaul.de   
+Account:           Dieter Paul's Account (eace6fc190c54838ac0eee815b22517c)   
+Resource group:    No resource group targeted, use 'ibmcloud target -g RESOURCE_GROUP'   
+CF API endpoint:      
+Org:                  
+Space:                
+doi: Build record uploaded successfully
+OK
+Preparing the build artifacts...
+
+Finished: SUCCESS

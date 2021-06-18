@@ -1,0 +1,9 @@
+Preparing to start the job...
+Running on public worker: eu-gbpublicworker04-2
+Pipeline image: latest
+Cloning the 'master' branch from repo 'https://github.com/dieterbk/qkfls-Movie-Reviews-Database.git'
+Repository successfully cloned
+Getting changes from revision '6f487ccd72822484b8bd6dc0a095961bc32b07f6' to revision 'db5aa1923ffa00478b13642e25faaa07aa4ef6d1'
+Preparing the build artifacts...
+
+Finished: SUCCESS

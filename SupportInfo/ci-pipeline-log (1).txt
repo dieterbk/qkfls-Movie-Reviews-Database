@@ -1,0 +1,8 @@
+Preparing to start the job...
+Running on public worker: eu-gbpublicworker06-2
+Pipeline image: latest
+Cloning the 'master' branch from repo 'https://github.com/dieterbk/qkfls-Movie-Reviews-Database.git'
+Repository successfully cloned
+Test runner script not found: ./test/run-tests.sh
+
+Finished: SUCCESS

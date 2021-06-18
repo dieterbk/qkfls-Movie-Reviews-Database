@@ -1,0 +1,175 @@
+Preparing to start the job...
+Running on public worker: eu-gbpublicworker05-2
+Pipeline image: latest
+Preparing the build artifacts...
+cf login -a "https://api.eu-gb.cf.cloud.ibm.com" -u apikey -p "****" -o "info@dpaul.de" -s "dev" 
+API endpoint: https://api.eu-gb.cf.cloud.ibm.com
+Authenticating...
+OK
+
+Targeted org info@dpaul.de
+
+Targeted space dev
+
+
+
+API endpoint:   https://api.eu-gb.cf.cloud.ibm.com (API version: 2.164.0)
+User:           info@dpaul.de
+Org:            info@dpaul.de
+Space:          dev
+Showing health and status for app movies-reviews-database-27f in org info@dpaul.de / space dev as info@dpaul.de...
+
+name:              movies-reviews-database-27f
+requested state:   started
+routes:            movies-reviews-database-27f.eu-gb.mybluemix.net
+last uploaded:     Thu 17 Jun 11:27:33 UTC 2021
+stack:             cflinuxfs3
+buildpacks:        nodejs
+
+type:           web
+instances:      1/1
+memory usage:   128M
+     state     since                  cpu    memory          disk           details
+#0   running   2021-06-17T11:27:52Z   0.3%   71.3M of 128M   123.5M of 1G   
+Renaming app movies-reviews-database-27f to movies-reviews-database-27f-OLD-1624008753 in org info@dpaul.de / space dev as info@dpaul.de...
+OK
+Pushing from manifest to org info@dpaul.de / space dev as info@dpaul.de...
+Using manifest file /workspace/963f7d7d-5e5d-4bc4-85fa-868743838aaf/manifest.yml
+Getting app info...
+Creating app with these attributes...
++ name:       movies-reviews-database-27f
+  path:       /workspace/963f7d7d-5e5d-4bc4-85fa-868743838aaf
++ memory:     128M
+  routes:
++   movies-reviews-database-27f.eu-gb.mybluemix.net
+
+Creating app movies-reviews-database-27f...
+Mapping routes...
+Comparing local files to remote cache...
+Packaging files to upload...
+Uploading files...
+ 0 B / 99.86 KiB    0.00% 99.86 KiB / 99.86 KiB  100.00% 99.86 KiB / 99.86 KiB  100.00% 99.86 KiB / 99.86 KiB  100.00% 99.86 KiB / 99.86 KiB  100.00% 99.86 KiB / 99.86 KiB  100.00% 99.86 KiB / 99.86 KiB  100.00% 99.86 KiB / 99.86 KiB  100.00% 1s
+
+Waiting for API to complete processing files...
+
+Staging app and tracing logs...
+   Downloading liberty-for-java_v3_58-20210602-1655...
+   Downloading binary_buildpack...
+   Downloading ruby_buildpack...
+   Downloading xpages_buildpack_v1_2_1-20160913-103...
+   Downloading go_buildpack...
+   Downloaded liberty-for-java_v3_58-20210602-1655
+   Downloading python_buildpack...
+   Downloaded ruby_buildpack
+   Downloading php_buildpack...
+   Downloaded xpages_buildpack_v1_2_1-20160913-103
+   Downloading sdk-for-nodejs_v4_5-20201130-1530-deprecated...
+   Downloaded binary_buildpack
+   Downloading nginx_buildpack...
+   Downloaded go_buildpack
+   Downloading r_buildpack...
+   Downloaded python_buildpack
+   Downloaded php_buildpack
+   Downloading sdk-for-nodejs-deprecated...
+   Downloading sdk-for-nodejs_v4_6-20210305-2036-deprecated...
+   Downloaded sdk-for-nodejs_v4_5-20201130-1530-deprecated
+   Downloading dotnet_core_buildpack...
+   Downloaded nginx_buildpack
+   Downloading sdk-for-nodejs...
+   Downloaded r_buildpack
+   Downloading liberty-for-java...
+   Downloaded sdk-for-nodejs-deprecated
+   Downloading nodejs_buildpack...
+   Downloaded sdk-for-nodejs_v4_6-20210305-2036-deprecated
+   Downloading liberty-for-java_v3_57-20210512-1446...
+   Downloaded dotnet_core_buildpack
+   Downloading swift_buildpack-deprecated...
+   Downloaded sdk-for-nodejs
+   Downloading xpages_buildpack...
+   Downloaded liberty-for-java
+   Downloading java_buildpack...
+   Downloaded nodejs_buildpack
+   Downloading staticfile_buildpack...
+   Downloaded liberty-for-java_v3_57-20210512-1446
+   Downloaded swift_buildpack-deprecated
+   Downloaded xpages_buildpack
+   Downloaded staticfile_buildpack
+   Downloaded java_buildpack
+   Cell 469b3238-9906-4413-892f-0585de278be1 creating container for instance 77dc7c6c-afa3-424b-ace1-d12d867ae41b
+   Cell 469b3238-9906-4413-892f-0585de278be1 successfully created container for instance 77dc7c6c-afa3-424b-ace1-d12d867ae41b
+   Downloading app package...
+   Downloaded app package (99.9K)
+   -----> Nodejs Buildpack version 1.7.48
+   -----> Installing binaries
+          engines.node (package.json): 10.*
+          engines.npm (package.json): unspecified (use default)
+   -----> Installing node 10.24.1
+          Download [https://buildpacks.cloudfoundry.org/dependencies/node/node_10.24.1_linux_x64_cflinuxfs3_80ce1404.tgz]
+          [31;1m**WARNING**[0m node 10.x.x will no longer be available in new buildpacks released after 2021-04-01.
+          See: https://github.com/nodejs/Release
+          Using default npm version: 6.14.12
+   -----> Installing yarn 1.22.10
+          Download [https://buildpacks.cloudfoundry.org/dependencies/yarn/yarn_1.22.10_linux_noarch_any-stack_0057c1c9.tgz]
+          Installed yarn 1.22.10
+   -----> Creating runtime environment
+          [34;1mPRO TIP:[0m It is recommended to vendor the application's Node.js dependencies
+          Visit http://docs.cloudfoundry.org/buildpacks/node/index.html#vendoring
+          NODE_ENV=production
+          NODE_HOME=/tmp/contents407985799/deps/0/node
+          NODE_MODULES_CACHE=true
+          NODE_VERBOSE=false
+          NPM_CONFIG_LOGLEVEL=error
+          NPM_CONFIG_PRODUCTION=true
+   -----> Building dependencies
+          Installing node modules (package.json + package-lock.json)
+   > bufferutil@4.0.1 install /tmp/app/node_modules/bufferutil
+   > node-gyp-build
+   > utf-8-validate@5.0.2 install /tmp/app/node_modules/utf-8-validate
+   > node-gyp-build
+   > nodemon@2.0.6 postinstall /tmp/app/node_modules/nodemon
+   > node bin/postinstall || exit 0
+   [32mLove nodemon? You can now support the project via the open collective:[22m[39m
+    > [96m[1mhttps://opencollective.com/nodemon/donate[0m
+   added 379 packages from 302 contributors and audited 380 packages in 13.366s
+   14 packages are looking for funding
+     run `npm fund` for details
+   found 8 vulnerabilities (3 low, 1 moderate, 4 high)
+     run `npm audit fix` to fix them, or `npm audit` for details
+          [31;1m**WARNING**[0m Unmet dependencies don't fail npm install but may cause runtime issues
+          See: https://github.com/npm/npm/issues/7494
+          Contrast Security no credentials found. Will not write environment files.
+   Exit status 0
+   Uploading droplet, build artifacts cache...
+   Uploading droplet...
+   Uploading build artifacts cache...
+   Uploaded build artifacts cache (27.7M)
+   Uploaded droplet (28M)
+   Uploading complete
+   Cell 469b3238-9906-4413-892f-0585de278be1 stopping instance 77dc7c6c-afa3-424b-ace1-d12d867ae41b
+   Cell 469b3238-9906-4413-892f-0585de278be1 destroying container for instance 77dc7c6c-afa3-424b-ace1-d12d867ae41b
+   Cell 469b3238-9906-4413-892f-0585de278be1 successfully destroyed container for instance 77dc7c6c-afa3-424b-ace1-d12d867ae41b
+
+Waiting for app to start...
+
+name:              movies-reviews-database-27f
+requested state:   started
+routes:            movies-reviews-database-27f.eu-gb.mybluemix.net
+last uploaded:     Fri 18 Jun 09:33:14 UTC 2021
+stack:             cflinuxfs3
+buildpacks:        nodejs
+
+type:            web
+instances:       1/1
+memory usage:    128M
+start command:   npm start
+     state     since                  cpu    memory          disk           details
+#0   running   2021-06-18T09:33:36Z   0.0%   49.3M of 128M   123.5M of 1G   
+
+Sending deployment success of movies-reviews-database-27f to IBM DevOps Services...
+IBM DevOps Services notified successfully.
+Deleting app movies-reviews-database-27f-OLD-1624008753 in org info@dpaul.de / space dev as info@dpaul.de...
+OK
+Sending deployment success of movies-reviews-database-27f-OLD-1624008753 to IBM DevOps Services...
+IBM DevOps Services notified successfully.
+
+Finished: SUCCESS
